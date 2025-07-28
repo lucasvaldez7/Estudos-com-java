@@ -6,7 +6,10 @@ public class Main {
         televisao001.smartTV = true;
         televisao001.tamanhoTela = 43;
         televisao001.resolucaoTela = "Full HD";
-            
-        System.out.format("A marca da televisão é %s, ela possui %d polegadas, é do tipo Smart com conectivdade a Google TV e WI-FI %b, com uma resolução %s ",televisao001.marca,televisao001.tamanhoTela,televisao001.smartTV,televisao001.resolucaoTela);   
+
+          //método para mostrar as informações da TV      
+        televisao001.mostrarStatus();
+
+        televisao001.ligar();
     }
 }
