@@ -1,3 +1,5 @@
+import javax.swing.JOptionPane;
+
 public class Funcionario {
     // atributos: nome cargo salario, matricula
     private String nome;
@@ -46,12 +48,17 @@ public class Funcionario {
 
 
             }
-
+                
         }
-    
-        
-    
-  }
+                // metodo para exibir as infos do funcionario no programa main
+             public void exibirInfos(){
+                JOptionPane.showMessageDialog(null,"Salario: " + this.getSalario());
+                JOptionPane.showMessageDialog(null,"Matricula: " + this.getMatricula());
+                JOptionPane.showMessageDialog(null,"Nome: " + this.getNome());
+                JOptionPane.showMessageDialog(null,"Cargo: " + this.getCargo());                
+
+    }
+}
         
 
 
