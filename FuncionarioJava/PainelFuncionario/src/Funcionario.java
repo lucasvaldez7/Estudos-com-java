@@ -40,22 +40,20 @@ public class Funcionario {
                 if(this.cargo.equalsIgnoreCase("Assistente Administrativo")){
                         this.salario = this.salario * 1.100;
                     
-                }else if (this.cargo.equalsIgnoreCase("Vendedor")){
+                } else if (this.cargo.equalsIgnoreCase("Vendedor")){
                     this.salario = this.salario * 1.350;
-
-            }  else{
-                this.salario = this.salario * 1;
-
-
-            }
+                }    else{
+                    this.salario = this.salario * 1;
+                }
                 
         }
                 // metodo para exibir as infos do funcionario no programa main
              public void exibirInfos(){
-                JOptionPane.showMessageDialog(null,"Salario: " + this.getSalario());
-                JOptionPane.showMessageDialog(null,"Matricula: " + this.getMatricula());
                 JOptionPane.showMessageDialog(null,"Nome: " + this.getNome());
-                JOptionPane.showMessageDialog(null,"Cargo: " + this.getCargo());                
+                JOptionPane.showMessageDialog(null,"Cargo: " + this.getCargo());
+                JOptionPane.showMessageDialog(null,"Matricula: " + this.getMatricula());
+                JOptionPane.showMessageDialog(null,"Salario: " + this.getSalario()); 
+                               
 
     }
 }

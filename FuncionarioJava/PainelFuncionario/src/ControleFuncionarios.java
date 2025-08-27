@@ -6,9 +6,9 @@ public class ControleFuncionarios {
         funcionario = new Funcionario();
 
         funcionario.setNome("Lucas Valdez");
-        funcionario.setMatricula("232500");
+        funcionario.setMatricula("000555");
         funcionario.setCargo("Jovem Aprendiz");
-        funcionario.setSalario(994.50);
+        funcionario.setSalario(999);
        
         funcionario.reajustarSalario();
         funcionario.exibirInfos();        
