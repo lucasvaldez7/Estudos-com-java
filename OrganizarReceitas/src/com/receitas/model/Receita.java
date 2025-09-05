@@ -1,29 +1,20 @@
 package com.receitas.model;
 
-import java.util.ArrayList;
 import java.util.List;
 
     public class Receita {
-        String nome;
-        String modoDePreparo;
-        List<Receita> Receita = new ArrayList<Receita>();
-        public Receita(){
-        }
+        //declaração dos atributos da classe receita
+        private String nome;
+        private String modoDePreparo;
+        private List<Ingrediente> ingredientes;
 
-
-
-        public void setNome(String nome) {
+        // construtor da classe recita iniciando todos os atributos
+        public Receita(String nome, String modoDePreparo, List<Ingrediente> ingredientes) {
             this.nome = nome;
-        }
-
-        public void setModoDePreparo(String modoDePreparo) {
             this.modoDePreparo = modoDePreparo;
+            this.ingredientes = ingredientes;
         }
-
-        public void setReceita(List<Receita> receita) {
-            Receita = receita;
-        }
-
+            // métodos getter
         public String getNome() {
             return nome;
         }
@@ -32,12 +23,7 @@ import java.util.List;
             return modoDePreparo;
         }
 
-        public List<Receita> getReceita() {
-            return Receita;
-        }
-
-        public void exibirReceita(){
-            System.out.println("Receita: "+ this.getNome());
-
+        public List<Ingrediente> getIngredientes() {
+            return ingredientes;
         }
     }

@@ -8,16 +8,10 @@ import java.util.List;
 public class OrganizadorDeReceitas {
 
     private List<Receita> colecaoDeReceitas = new ArrayList<>();
-    private List<Receita> Receita = new ArrayList<Receita>();
-
-    public OrganizadorDeReceitas(){
-        this.colecaoDeReceitas = new ArrayList<>();
-        this.Receita = new ArrayList<>();
-    }
 
 
     public void adicionarReceita(Receita receita){
-
+            colecaoDeReceitas.add(receita);
 
     }
     public void removerReceita(String nomeDaReceita){

@@ -1,14 +1,13 @@
 package com.receitas.ui;
 
 import com.receitas.model.Receita;
+import com.receitas.service.OrganizadorDeReceitas;
 
 public class Main {
     public static void main(String[] args) {
-            Receita receita;
-            receita = new Receita();
+        OrganizadorDeReceitas organizador = new OrganizadorDeReceitas();
 
-            receita.setNome("Bolo de Cenoura");
 
-            receita.exibirReceita();
+
         }
     }
