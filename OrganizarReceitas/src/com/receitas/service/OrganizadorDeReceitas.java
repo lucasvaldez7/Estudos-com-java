@@ -15,8 +15,18 @@ public class OrganizadorDeReceitas {
 
     }
     public void removerReceita(String nomeDaReceita){
+            for (int i = 0; i < colecaoDeReceitas.size(); i++){
+                Receita receitaAtual = colecaoDeReceitas.get(i);
 
+                if(receitaAtual.getNome() .equalsIgnoreCase(nomeDaReceita)) {
+                    colecaoDeReceitas.remove(i);
 
+                    System.out.printf("\nReceita %s, removida com sucesso",nomeDaReceita);
+                    return;
+                }
+
+            }
+            System.out.printf("\nReceita %s não encontrada", nomeDaReceita);
     }
 
 }
