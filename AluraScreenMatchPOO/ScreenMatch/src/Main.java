@@ -1,16 +1,17 @@
+import br.com.alura.screenmatch.modelos.Filme;
+
 public class Main {
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
-        meuFilme.nome = "Zootopia 2";
-        meuFilme.duracaoEmMinutos = 108;
-        meuFilme.anoLancamento = 2025;     
+        meuFilme.setNome("Zootopia 2");
+        meuFilme.setDuracaoEmMinutos(108);
+        meuFilme.setAnoLancamento (2025);     
 
         meuFilme.exibirFichaTecnica();
-        meuFilme.avalia(8.5);
-        meuFilme.avalia(7);
+        meuFilme.avalia(8);
+        meuFilme.avalia(8);
         meuFilme.avalia(10);
-        System.out.println(meuFilme.somaDasAvaliacoes);
-        System.out.println(meuFilme.totalAvaliacao);
-        System.out.println(meuFilme.ObterMedia());
+        
+        System.out.println("A média das avaliações é: "+ meuFilme.ObterMedia());
     }   
 }
