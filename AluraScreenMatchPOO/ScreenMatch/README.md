@@ -1,18 +1,12 @@
-## Getting Started
+## Projeto ScreenMatch - Alura
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Nesse projeto apliquei:
 
-## Folder Structure
+Encapsulamento: controlar o acesso aos atributos e métodos de uma classe;
+Modificadores de acesso public e private;
+Métodos de leitura dos atributos, que são os métodos getters;
+Métodos de modificação dos atributos, que são os métodos setters;
+O uso da palavra chave import, para importar classes de outros pacotes;
+O uso da palavra chave this;
+Boas práticas de dividir o código em pacotes, bem como a convenção usada: domínio da empresa ao contrário, onde aqui vamos colocar por exemplo br.com.alura.screenmatch.
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
