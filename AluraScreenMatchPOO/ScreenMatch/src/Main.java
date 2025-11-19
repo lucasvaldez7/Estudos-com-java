@@ -1,3 +1,4 @@
+import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 
@@ -23,7 +24,9 @@ public class Main {
         lost.setTemporadas(7);
         lost.setEpisodiosPorTemporada(10);
         
-        
-
+        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+        calculadora.inclui(lost);
+        calculadora.inclui(meuFilme);
+        System.out.println("Tempo total de reprodução: " + calculadora.getTempoTotal() + " minutos");
     }   
 }
