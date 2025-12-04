@@ -1,5 +1,4 @@
 package br.com.alura.screenmatch.modelos;
-
 import br.com.alura.screenmatch.calculos.Classificavel;
 
 public class Filme extends Titulo implements Classificavel {
@@ -17,5 +16,11 @@ public class Filme extends Titulo implements Classificavel {
     @Override
     public int getClassificacao() {
         return(int) ObterMedia() / 2;
+    }
+
+    @Override
+    public String toString() {
+
+        return "Filme:" + this.getNome() + " (" + this.getAnoLancamento() + ")";
     }
 }
