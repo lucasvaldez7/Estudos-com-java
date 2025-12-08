@@ -7,10 +7,9 @@ import br.com.alura.screenmatch.modelos.Serie;
 
 public class Main {
     public static void main(String[] args) {
-        Filme meuFilme = new Filme();
-        meuFilme.setNome("Zootopia 2");
+        Filme meuFilme = new Filme("Zootopia 2", 2016);    
         meuFilme.setDuracaoEmMinutos(108);
-        meuFilme.setAnoLancamento (2025);
+       
         
 
         meuFilme.exibirFichaTecnica();
@@ -20,9 +19,7 @@ public class Main {
         
         System.out.println("A média das avaliações é: "+ meuFilme.ObterMedia());
 
-        Serie lost = new Serie();
-        lost.setNome("Lost");
-        lost.setAnoLancamento(2000);
+        Serie lost = new Serie("Lost", 2000);
         lost.exibirFichaTecnica();
         lost.setTemporadas(7);
         lost.setEpisodiosPorTemporada(10);
@@ -42,9 +39,7 @@ public class Main {
         episodio.setTotalVisualizacoes(150);
         filtro.filtra(episodio);
 
-        var FilmeDoPaulo = new Filme();
-        FilmeDoPaulo.setNome("Dogville");
-        FilmeDoPaulo.setAnoLancamento(2003);
+        var FilmeDoPaulo = new Filme( "Dogville", 2003);     
         FilmeDoPaulo.setDuracaoEmMinutos(200);
 
         ArrayList<Filme> listaDeFilmes = new ArrayList<>();
