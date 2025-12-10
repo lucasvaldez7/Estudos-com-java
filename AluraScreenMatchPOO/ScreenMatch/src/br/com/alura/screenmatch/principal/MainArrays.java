@@ -1,6 +1,8 @@
 package br.com.alura.screenmatch.principal;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
@@ -8,13 +10,13 @@ import br.com.alura.screenmatch.modelos.Titulo;
 
 public class MainArrays {
     public static void main(String[] args) {
-         Filme meuFilme = new Filme("Zootopia 2", 2016); 
-         meuFilme.avalia(10);
-         Serie lost = new Serie("Lost", 2000);
-         var FilmeDoPaulo = new Filme( "Dogville", 2003);  
-         FilmeDoPaulo.avalia(8.9);
+        Filme meuFilme = new Filme("Zootopia 2", 2016);
+        meuFilme.avalia(10);
+        Serie lost = new Serie("Lost", 2000);
+        var FilmeDoPaulo = new Filme("Dogville", 2003);
+        FilmeDoPaulo.avalia(8.9);
 
-         ArrayList<Titulo> lista = new ArrayList<>();
+        ArrayList<Titulo> lista = new ArrayList<>();
         lista.add(FilmeDoPaulo);
         lista.add(meuFilme);
         lista.add(lost);
@@ -26,7 +28,20 @@ public class MainArrays {
             } else {
                 System.out.println("Não é um filme ou não passou na classificação");
             }
-           
+
         }
+
+        ArrayList<String> buscaPorArtista = new ArrayList<>();
+        buscaPorArtista.add("Adam Sandler");
+        buscaPorArtista.add("Dwayne Johnson");
+        buscaPorArtista.add("Sandra Bullock");
+        System.out.println(buscaPorArtista);
+
+        Collections.sort(buscaPorArtista);
+        System.out.println("Depois de ordenado: " + buscaPorArtista);
+        Collections.sort(lista);
+        System.out.println("Lista de títulos ordenados: " + lista);
+        lista.sort(Comparator.comparing(Titulo::getAnoLancamento));
+    System.out.println("Ordenando por ano: " + lista);
     }
 }
