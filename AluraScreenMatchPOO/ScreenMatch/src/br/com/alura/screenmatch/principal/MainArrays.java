@@ -3,6 +3,8 @@ package br.com.alura.screenmatch.principal;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.LinkedList;
+import java.util.List;
 
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
@@ -16,7 +18,7 @@ public class MainArrays {
         var FilmeDoPaulo = new Filme("Dogville", 2003);
         FilmeDoPaulo.avalia(8.9);
 
-        ArrayList<Titulo> lista = new ArrayList<>();
+        List<Titulo> lista = new LinkedList<>();
         lista.add(FilmeDoPaulo);
         lista.add(meuFilme);
         lista.add(lost);
