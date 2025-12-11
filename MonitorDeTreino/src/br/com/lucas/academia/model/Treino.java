@@ -1,7 +1,5 @@
 package br.com.lucas.academia.model;
 
-import br.com.lucas.academia.Exercicio;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,7 +18,7 @@ public class Treino {
     }
     public void listarExercicios(){
 
-        System.out.println("Treino " + nome + ":");
+        System.out.println("\nTreino " + nome + ":");
         for (Exercicio e : listaExercicio){
             System.out.println(" " + e);
 
