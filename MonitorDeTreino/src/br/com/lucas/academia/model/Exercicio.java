@@ -1,4 +1,4 @@
-package br.com.lucas.academia;
+package br.com.lucas.academia.model;
 
 public class Exercicio {
     private String nome;
@@ -28,9 +28,7 @@ public class Exercicio {
 
     @Override
     public String toString() {
-        return "Exercicio-- " +
-                "nome: " + nome + '\'' +
-                ", pesoMaximo: " + pesoMaximo +
-                '}';
+        return "Exercicio: " + nome +
+                ", Peso Máximo: " + pesoMaximo;
     }
 }
