@@ -10,8 +10,7 @@ public class Main {
     public static void main(String[] args) {
         Filme meuFilme = new Filme("Zootopia 2", 2016);    
         meuFilme.setDuracaoEmMinutos(108);
-       
-        
+  
 
         meuFilme.exibirFichaTecnica();
         meuFilme.avalia(8);
