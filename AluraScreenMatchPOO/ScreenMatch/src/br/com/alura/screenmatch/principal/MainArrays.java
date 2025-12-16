@@ -6,9 +6,9 @@ import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
-import br.com.alura.screenmatch.modelos.Filme;
-import br.com.alura.screenmatch.modelos.Serie;
-import br.com.alura.screenmatch.modelos.Titulo;
+import br.com.alura.screenmatch.model.Filme;
+import br.com.alura.screenmatch.model.Serie;
+import br.com.alura.screenmatch.model.Titulo;
 
 public class MainArrays {
     public static void main(String[] args) {

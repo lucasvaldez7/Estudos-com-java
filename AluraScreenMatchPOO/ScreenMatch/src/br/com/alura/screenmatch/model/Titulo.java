@@ -1,4 +1,4 @@
-package br.com.alura.screenmatch.modelos;
+package br.com.alura.screenmatch.model;
 
 import br.com.alura.screenmatch.exececao.ErroDeConversaoDeAnoException;
 
